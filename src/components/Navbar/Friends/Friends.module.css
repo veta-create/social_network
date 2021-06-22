@@ -1,0 +1,26 @@
+.friends {
+  position: relative;
+  top: 8%;
+  width: 300px;
+
+  color: #fff;
+}
+
+.friends a {
+  text-decoration: none;
+}
+
+.friend {
+  list-style-type: none;
+  position: relative;
+  right: 20%;
+
+  color: #fff;
+}
+
+
+.friend img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}

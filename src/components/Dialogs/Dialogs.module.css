@@ -1,0 +1,48 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+.dialogsItems .dialog{
+  padding: 15px;
+}
+
+.dialogsItems .dialog a {
+  text-decoration: none;
+
+  color: #fff;
+}
+
+.dialogsItems .dialog .active {
+  color: brown;
+}
+
+.messages {
+  background-color: rgb(175, 73, 73);
+}
+
+.messages .message {
+  padding: 15px;
+}
+
+.textMessage {
+  position: absolute;
+  top: 55%;
+}
+
+.sendButton {
+  position: absolute;
+  top: 60%;
+}
+
+img.ava {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
