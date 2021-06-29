@@ -5,7 +5,6 @@ let initialState = {friends: [
 ]}
 
 const navbarReducer = (state = initialState, action) => {
-
   return state
 }
 

@@ -13,7 +13,6 @@ const App = (props) => {
   return (
     <div className='app-wrapper'>
       <Header />
-      {/* state={props.store.getState().navbar} */}
       <NavbarContainer /> 
       <div className='app-wrapper-content'>
 
