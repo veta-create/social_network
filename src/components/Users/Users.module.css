@@ -1,0 +1,16 @@
+.user {
+  height: 250px;
+  background-color: rgb(105, 27, 27);
+  border: 2px solid rgb(78, 18, 18);
+}
+
+.user img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+
+.location {
+  position: relative;
+  right: 0;
+}

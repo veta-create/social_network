@@ -44,11 +44,11 @@ const dialogsReducer = (state = initialState, action) => {
 }
 
 export let addMessageActionCreator = () => {
-  return { type: 'ADD-MESSAGE' }
+  return { type: ADD_MESSAGE }
 }
 
 export let updateNewMessageTextActionCreator = (text) => {
-  return { type: 'UPDATE-NEW-MESSAGE-TEXT', newText: text }
+  return { type: UPDATE_NEW_MESSAGE_TEXT, newText: text }
 }
 
 export default dialogsReducer
