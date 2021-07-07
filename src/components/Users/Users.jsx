@@ -3,16 +3,41 @@ import React from 'react'
 import s from './Users.module.css'
 import userPhoto from '../../assets/images/default-profile.png'
 
+
 class Users extends React.Component {
 
-  constructor(props) {
-    super(props)
-    axios.get('https://social-network.samuraijs.com/api/1.0/users').then(res => this.props.setUsers(res.data.items))
+  componentDidMount () {
+    axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`).then(res => {
+      this.props.setUsers(res.data.items)
+      this.props.setUsersTotalCount(res.data.totalCount)
+    })
   }
 
+  onPageChanged = (pageNumber) => {
+    debugger
+    this.props.setCurrentPage(pageNumber)
+    axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNumber}&count=${this.props.pageSize}`).then(res => {
+      this.props.setUsers(res.data.items)
+    })
+  }
 
   render() {
+    let pageCount = Math.ceil(this.props.totalUsersCount / this.props.pageSize)
+
+    let pages = []
+    for (let i = 1; i <= pageCount; i++) {
+      pages.push(i)
+    }
+
     return <div>
+      <div className={s.pagination}>
+        {pages.map(p => {
+          return <span className={p === this.props.currentPage ? s.pageSelected : ''}
+           onClick={() => this.onPageChanged(p)}>{p}</span>
+        })}
+      </div>
+
+
       {
         this.props.users.map(u => <div className={s.user} key={u.id}>
           <div className={s.location}>
@@ -41,7 +66,6 @@ class Users extends React.Component {
         </div>)
       }
     </div>
-
   }
 
 }
