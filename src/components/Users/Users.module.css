@@ -28,6 +28,16 @@
   margin-left: 20px;
 }
 
+.statusFolButton {
+  background-color: bisque;
+  color: brown;
+  border: none;
+  height: 30px;
+  width: 65px;
+  box-shadow: 0 0 10px rgb(44, 25, 25);
+  margin-top: 15px;
+}
+
 .pageSelected {
   font-weight: bold;
   color: rgb(128, 73, 73);
