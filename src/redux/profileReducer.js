@@ -1,7 +1,6 @@
-import { act } from "react-dom/test-utils"
-
 const ADD_POST = 'ADD-POST'
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT'
+const SET_USER_PROFILE = 'SET-USER-PROFILE'
 
 let initialState = {
   posts: [
@@ -9,7 +8,8 @@ let initialState = {
     { id: 2, message: 'Life is awesome!', likesCount: 0 },
     { id: 3, message: 'I want to sleep', likesCount: 25 }
   ],
-  newPostText: 'Veta so tired'
+  newPostText: 'Veta so tired',
+  profile: null
 }
 
 const profileReducer = (state = initialState, action) => {
@@ -34,6 +34,13 @@ const profileReducer = (state = initialState, action) => {
       }
     }
 
+    case SET_USER_PROFILE: {
+      return {
+        ...state,
+        profile: action.profile
+      }
+    }
+
     default:
       return state
 
@@ -47,6 +54,10 @@ export let addPostActionCreator = () => {
 
 export let updateNewPostTextActionCreator = (text) => {
   return { type: UPDATE_NEW_POST_TEXT, newText: text }
+}
+
+export let setUserProfile = (profile) => {
+  return { type: SET_USER_PROFILE, profile }
 }
 
 export default profileReducer

@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import { follow, setCurrentPage, setUsers, setUsersTotalCount, toggleIsFetching, unfollow } from '../../redux/usersReducer'
 import Users from './Users'
 import s from './Users.module.css'
-import preloader from '../../assets/images/preloader.svg'
 import Preloader from '../common/Preloader/Preloader'
 
 class UsersAPIContainer extends React.Component {

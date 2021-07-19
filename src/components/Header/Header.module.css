@@ -9,3 +9,16 @@
   height: 50px;
   border-radius: 50%;
 }
+
+.login {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+
+  color: aliceblue;
+}
+
+.login:hover {
+  border: 2px solid aliceblue;
+}

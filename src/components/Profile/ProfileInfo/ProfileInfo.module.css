@@ -1,3 +1,26 @@
 .descriptionBlock {
   padding: 10px;
 }
+
+.ava img {
+  border-radius: 20%;
+  width: 200px;
+  height: 200px;
+  box-shadow: inset 30px 30px black;
+}
+
+.contact img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.contacts li {
+  list-style: none;
+}
+
+.contact a {
+  color: aliceblue;
+}
+
+
