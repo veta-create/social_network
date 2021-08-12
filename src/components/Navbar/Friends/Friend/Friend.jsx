@@ -7,7 +7,7 @@ const Friend = (props) => {
   return (
     <div>
       <NavLink to={`/${props.id}`}>
-        <li className={s.friend} id={props.id}><img src={props.ava} />{props.name}<br /></li>
+        <li className={s.friend} id={props.id}><img src={props.ava} alt='avatar'/>{props.name}<br /></li>
       </NavLink>
     </div>
   )

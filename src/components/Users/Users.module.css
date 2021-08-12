@@ -38,6 +38,11 @@
   margin-top: 15px;
 }
 
+.statusFolButton:disabled {
+  background-color: rgb(238, 220, 198);
+  color: rgb(163, 83, 83);
+}
+
 .preloader {
   width: 400px;
   height: 400px;

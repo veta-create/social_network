@@ -2,8 +2,6 @@ import React from 'react'
 import userPhoto from '../../assets/images/default-profile.png'
 import s from './Users.module.css'
 import { NavLink } from 'react-router-dom'
-import { usersAPI } from '../../api/api'
-
 
 let Users = (props) => {
   let pageCount = Math.ceil(props.totalUsersCount / props.pageSize)
@@ -31,7 +29,7 @@ let Users = (props) => {
 
         <span>
           <div>
-            <NavLink to={'/profile/' + u.id}><img src={u.photos.large != null ? u.photos.large : userPhoto} /></NavLink>
+            <NavLink to={'/profile/' + u.id}><img alt='avatar' src={u.photos.large != null ? u.photos.large : userPhoto} /></NavLink>
           </div>
         </span>
 
@@ -41,22 +39,11 @@ let Users = (props) => {
         </span>
 
         <div>
-          {u.followed
-            ? <button className={s.statusFolButton} onClick={() => {
-              usersAPI.unfollowed(u.id).then(res => {
-                if (res.data.resultCode == 0) {
-                  props.unfollow(u.id)
-                }
-              }
-              )
-            }}>Unfollow</button>
-            : <button className={s.statusFolButton} onClick={() => {
-              usersAPI.followed(u.id).then(res => {
-                if (res.data.resultCode == 0) {
-                  props.follow(u.id)
-                }
-              })
-            }}>Follow</button>
+          { u.followed
+            ? <button disabled={props.isFollowing.some(id => id === u.id)} className={s.statusFolButton}
+             onClick={() => {props.unfollow(u.id)}}>Unfollow</button>
+            : <button disabled={props.isFollowing.some(id => id === u.id)} className={s.statusFolButton}
+             onClick={() => {props.follow(u.id)}}>Follow</button>
           }
         </div>
 

@@ -1,10 +1,9 @@
-import React from 'react';
-import s from './Profile.module.css'
-import Profile from './Profile';
-import axios from 'axios';
-import { connect } from 'react-redux';
+import React from 'react'
+import Profile from './Profile'
+import axios from 'axios'
+import { connect } from 'react-redux'
 import { setUserProfile } from '../../redux/profileReducer'
-import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom'
 
 
 
