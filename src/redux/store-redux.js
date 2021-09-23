@@ -5,13 +5,15 @@ import navbarReducer from '../redux/navbarReducer'
 import usersReducer from './usersReducer'
 import authReducer from './authReducer'
 import thunkMiddleWare from 'redux-thunk'
+import { reducer as formReducer} from 'redux-form'
 
 let reducers = combineReducers({
   profilePage: profileReducer,
   dialogsPage: dialogsReducer,
   navbar: navbarReducer,
   usersPage: usersReducer,
-  auth: authReducer
+  auth: authReducer,
+  form: formReducer
 })
 
 let store = createStore(reducers, applyMiddleware(thunkMiddleWare))

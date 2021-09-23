@@ -1,7 +1,8 @@
 .user {
   height: 250px;
-  background-color: rgb(105, 27, 27);
-  border: 2px solid rgb(78, 18, 18);
+
+  background-color: #a3170b;
+  border: 2px solid #dd4f37;
 }
 
 .user img {
@@ -16,7 +17,8 @@
 }
 
 .pagination {
-  color: aliceblue;
+  background-color: #dd4f37;
+  color: #fff;
 }
 
 .pagination:hover {
@@ -29,13 +31,14 @@
 }
 
 .statusFolButton {
-  background-color: bisque;
-  color: brown;
   border: none;
   height: 30px;
   width: 65px;
   box-shadow: 0 0 10px rgb(44, 25, 25);
   margin-top: 15px;
+
+  background-color: bisque;
+  color: brown;
 }
 
 .statusFolButton:disabled {
@@ -52,5 +55,5 @@
 
 .pageSelected {
   font-weight: bold;
-  color: rgb(128, 73, 73);
+  color: #f7965f;;
 }

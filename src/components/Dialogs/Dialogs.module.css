@@ -10,15 +10,17 @@
 .dialogsItems .dialog a {
   text-decoration: none;
 
-  color: #fff;
+  color: #f3d59e;
 }
 
 .dialogsItems .dialog .active {
-  color: brown;
+  color: #f1e0be;
+  font-size: 23px;
 }
 
 .messages {
-  background-color: rgb(175, 73, 73);
+  background-color: #ce3628;
+  color: #f3d59e;
 }
 
 .messages .message {

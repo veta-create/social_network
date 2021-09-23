@@ -5,6 +5,7 @@ import panorama from '../../../assets/images/panorama.jpg'
 import vkLogo from '../../../assets/images/vk-logo.png'
 import instLogo from '../../../assets/images/inst-logo.png'
 import userPhoto from '../../../assets/images/default-profile.png'
+import ProfileStatus from './ProfileStatus'
 
 const ProfileInfo = (props) => {
   if (!props.profile) {
@@ -17,10 +18,15 @@ const ProfileInfo = (props) => {
         <img alt="#" src={panorama} />
       </div>
       <div className={s.descriptionBlock}>
+
         <div className={s.ava}><img src={props.profile.photos.large ? props.profile.photos.large : userPhoto} alt='avatar' /></div>
+
+        <ProfileStatus updateStatus={props.updateStatus} status={props.status}/>
+
         <div><p>{props.profile.fullName}</p></div>
           <div><p>О себе: {props.profile.aboutMe ? props.profile.aboutMe : '...'}</p></div>  
         <div><p>Ищу работу: {props.profile.lookingForAJob ? 'да' : 'нет'}</p></div>
+
         <div className={s.contacts}>
           <ul>
             <li>
@@ -37,7 +43,9 @@ const ProfileInfo = (props) => {
             </li>
           </ul>
         </div>
+
       </div>
+
     </div>
   )
 }

@@ -1,0 +1,27 @@
+.formControl {
+
+}
+
+.formControl.textField textarea {
+  border: 3px solid rgb(211, 138, 109);
+}
+
+/* .formControl.textField.error textarea {
+  border: 8px solid #fff;
+} */
+
+.formControl.textField textarea:focus {
+  outline: none;
+  border: 2px solid rgb(73, 44, 44);
+}
+
+span.errorText {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div.error {
+  height: 200px;
+  width: 50px;
+}
+

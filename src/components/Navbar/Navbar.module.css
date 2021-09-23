@@ -2,16 +2,17 @@
   grid-area: n;
   padding: 15px;
 
-  background-color: rgb(218, 105, 105);
+  background-color: #dd4f37;
 }
 
 .item a{
   text-decoration: none;
   cursor: pointer;
   
-  color: #fff;
+  color: #f3d59e;
 }
 
 .item .active {
-  color: rgb(240, 168, 168);
+  color: #fae7c3;
+  font-size: 23px;
 }
