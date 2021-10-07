@@ -5,6 +5,7 @@ import { Field, reduxForm } from 'redux-form'
 import { Input } from '../../FormsControls/FormControls'
 import { required } from '../../utils/validators/validators'
 import { login } from '../../redux/authReducer'
+import error from '../../assets/images/error.png'
 import s from './Login.module.css'
 
 const LoginForm = (props) => {
@@ -14,6 +15,10 @@ const LoginForm = (props) => {
       <div><Field type={'text'} placeholder={'Email'} name={'email'} component={Input} validate={[required]} /></div>
       <div><Field type={'password'} placeholder={'password'} name={'password'} component={Input} validate={[required]} /></div>
       <div><Field type={'checkbox'} name={'rememberMe'} component={'input'} /> remember me </div>
+      <div className={s.formSummaryError}>
+        {/* <div className={s.error}><img src={error}></img></div> */}
+        {props.error && <div>{props.error}</div>}
+      </div>
       <div><button>SUBMIT</button></div>
 
     </form>
