@@ -109,7 +109,7 @@ export let toggleIsFollowing = (isFollowing, userId) => {
   return { type: TOGGLE_IS_FOLLOWING, isFollowing, userId }
 }
 
-export const getUsers = (pageNumber, pageSize) => {
+export const requestUsers = (pageNumber, pageSize) => {
   return (dispatch) => {
     dispatch(toggleIsFetching(true))
     usersAPI.getUsers(pageNumber, pageSize).then(data => {

@@ -9,7 +9,6 @@ let initialState = {
 const appReducer = (state = initialState, action) => {
   switch (action.type) {
     case INITIALIZED_SUCCESS: {
-      debugger
       return {
         ...state,
         initialized: true
@@ -25,7 +24,6 @@ export const initializedSucess = () => ({ type: INITIALIZED_SUCCESS })
 export const initializeApp = () => (dispatch) =>{
     let promise = dispatch(getAuthMe())
     Promise.all([promise]).then(() => {
-      debugger
       dispatch(initializedSucess())
     })
 }
