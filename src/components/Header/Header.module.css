@@ -11,7 +11,7 @@
   border-radius: 50%;
 }
 
-.login, .logout {
+.login {
   float: right;
   font-size: 20px;
   font-weight: bold;
@@ -20,7 +20,16 @@
   color: aliceblue;
 }
 
+.logout {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  
+  color: aliceblue;
+  background-color: #d42a1b;
+  border: none;
+}
 .logout:hover {
-  border: 2px solid aliceblue;
   cursor: pointer;
 }
