@@ -9,11 +9,7 @@ let initialState = {
     { id: 5, name: 'Sergey', ava: 'https://www.whatsappimages.in/wp-content/uploads/2021/01/Boys-Feeling-Very-Sad-Images-Pics-Downlaod.jpg' }
   ],
   messages: [
-    { id: 1, message: 'Hello' },
-    { id: 2, message: 'Надо делать' },
-    { id: 3, message: 'Дай интернет' },
-    { id: 4, message: 'ооо' },
-    { id: 5, message: 'кук' }
+    { id: 1, message: 'Hello' }
   ]
 }
 

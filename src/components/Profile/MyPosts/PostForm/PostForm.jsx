@@ -3,6 +3,7 @@ import Field from 'redux-form/lib/Field'
 import reduxForm from 'redux-form/lib/reduxForm'
 import { TextArea } from '../../../../FormsControls/FormControls'
 import { maxLengthCreator, required } from '../../../../utils/validators/validators'
+import s from './PostForm.module.css'
 
 const maxLength30 = maxLengthCreator(30)
 
@@ -12,7 +13,7 @@ const Form = (props) => {
       <div><Field type={'text'} name={'comment'}
        component={TextArea}
        validate={[required, maxLength30]}/></div>
-      <div><button>Add Post</button></div>
+      <div><button className={s.addPost}>Add Post</button></div>
     </form>
   </div>
 }
