@@ -13,7 +13,7 @@ export const usersAPI = {
   getUsers(pageNumber, pageSize) {
     return instance.get(`users?page=${pageNumber}&count=${pageSize}`).then(res => res.data)
   },
-
+//getUsersTotalCount
   unfollowed(userId) {
     return instance.delete(`follow/${userId}`)
   },
