@@ -1,6 +1,6 @@
 import React from 'react'
-import s from './../../Users/Users.module.css'
-import preloader from '../../../assets/images/preloader.svg'
+import s from './Preloader.module.css'
+import preloader from '../../../assets/images/preloader.png'
 
 let Preloader = (props) => {
   return (

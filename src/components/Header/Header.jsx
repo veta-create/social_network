@@ -6,7 +6,7 @@ import logo from "../../assets/images/logo.png";
 const Header = (props) => {
   return (
     <header className={s.header}>
-      <img alt="logo" src={logo} />
+      <img className={s.logo} alt="logo" src={logo} />
 
       {props.auth.isAuth ? (
         <div className={s.login}>

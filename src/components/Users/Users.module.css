@@ -59,13 +59,6 @@
   color: rgb(156, 130, 130)
 }
 
-.preloader {
-  width: 400px;
-  height: 400px;
-  margin-top: 200px;
-  margin-left: 355px;
-}
-
 .pageSelected {
   font-weight: bold;
 

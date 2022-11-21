@@ -4,8 +4,9 @@
   background-color: #dd2355;
 }
 
-.header img {
+.header .logo {
   margin-left: 10px;
+  margin-top: 5px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -31,6 +32,7 @@
   background-color: #dd2355;
   border: none;
 }
+
 .logout:hover {
   cursor: pointer;
 }
