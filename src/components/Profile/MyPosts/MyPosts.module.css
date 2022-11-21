@@ -1,7 +1,31 @@
 .postsBlock {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  font-family: "MarckScript-Regular";
+
+  border: 2px dashed rgb(188, 97, 112);
+  background-image: url(../../../assets/images/limon.png),
+    url(../../../assets/images/graipfruit.png),
+    url(../../../assets/images/tangerine.png);
+  background-repeat: no-repeat;
+  background-position: 80% 80%, 60% 50%, 80% 20%;
 }
 
 .posts {
   margin-top: 5px;
+}
+
+.postsBlock .header {
+  padding: 10px 0;
+  font-size: 3rem;
+}
+
+@font-face {
+  font-family: "MarckScript-Regular";
+  src: url("../../../fonts/Marck_Script/MarckScript-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }

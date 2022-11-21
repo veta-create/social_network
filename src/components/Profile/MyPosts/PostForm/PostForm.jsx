@@ -8,9 +8,9 @@ import s from './PostForm.module.css'
 const maxLength30 = maxLengthCreator(30)
 
 const Form = (props) => {
-  return <div>
+  return <div className={s.postForm}>
     <form onSubmit={props.handleSubmit}>
-      <div><Field type={'text'} name={'comment'}
+      <div className={s.textArea}><Field type={'text'} name={'comment'}
        component={TextArea}
        validate={[required, maxLength30]}/></div>
       <div><button className={s.addPost}>Add Post</button></div>

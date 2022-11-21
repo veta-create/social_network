@@ -1,8 +1,23 @@
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "MarckScript-Regular";
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  color: #dd2355;
+}
+
 .user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 285px;
   height: 250px;
 
-  background-color: #a3170b;
-  border: 2px solid #dd4f37;
+  background-color: #f8f7f2;
+  border: 2px solid #dd503718;
 }
 
 .user img {
@@ -11,13 +26,10 @@
   border-radius: 10%;
 }
 
-.location {
-  position: relative;
-  right: 0;
-}
-
 .pagination {
-  background-color: #dd4f37;
+  font-size: 1.5rem;
+
+  background-color: #dd2355;
   color: #fff;
 }
 
@@ -32,18 +44,19 @@
 
 .statusFolButton {
   border: none;
-  height: 30px;
-  width: 85px;
-  box-shadow: 0 0 10px rgb(44, 25, 25);
+  height: 35px;
+  width: 90px;
+  box-shadow: 0 0 5px rgb(44, 25, 25);
   margin-top: 15px;
+  font-weight: bold;
 
-  background-color: bisque;
-  color: brown;
+  background-color: #fd5e5b;
+  color: #f8f7f2;
 }
 
 .statusFolButton:disabled {
-  background-color: rgb(238, 220, 198);
-  color: rgb(163, 83, 83);
+  background-color: #f77775;
+  color: rgb(156, 130, 130)
 }
 
 .preloader {
@@ -55,5 +68,14 @@
 
 .pageSelected {
   font-weight: bold;
-  color: #f7965f;;
+
+  color: #fccb6f;
+}
+
+@font-face {
+  font-family: "MarckScript-Regular";
+  src: url("../../fonts/Marck_Script/MarckScript-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }

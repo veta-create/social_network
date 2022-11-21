@@ -3,38 +3,32 @@
   grid-template-columns: 2fr 8fr;
 }
 
-.dialogsItems .dialog{
+.dialogsItems .dialog {
   padding: 15px;
 }
 
 .dialogsItems .dialog a {
   text-decoration: none;
+  font-family: "MarckScript-Regular";
+  font-size: 1.8rem;
 
-  color: #f3d59e;
+  color: #dd2355;
 }
 
 .dialogsItems .dialog .active {
-  color: #f1e0be;
-  font-size: 23px;
+  font-size: 1.5rem;
 }
 
 .messages {
-  background-color: #ce3628;
+  padding: 20px;
+
+  background-color: #dd2355;
   color: #f3d59e;
 }
 
 .messages .message {
   padding: 15px;
-}
-
-.textMessage {
-  position: absolute;
-  top: 55%;
-}
-
-.sendButton {
-  position: absolute;
-  top: 60%;
+  font-size: 1.5rem;
 }
 
 img.ava {
@@ -44,11 +38,25 @@ img.ava {
 }
 
 .sendMessage {
-  
+  width: 100px;
+  height: 40px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  color: #dd2355;
+  background-color: #f8f7f2;
+  border: none;
 }
 
+.sendMessage:hover {
+  transform: scale(0.9);
+}
 
-
-
-
-
+@font-face {
+  font-family: "MarckScript-Regular";
+  src: url("../../fonts/Marck_Script/MarckScript-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

@@ -4,6 +4,10 @@
   border-radius: 50%;
 }
 
+.item .message {
+  font-size: 1.8rem;
+}
+
 .like img {
   width: 20px;
   height: 20px;

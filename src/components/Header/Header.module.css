@@ -1,7 +1,7 @@
 .header {
   grid-area: h;
-  
-  background-color: #d42a1b;
+
+  background-color: #dd2355;
 }
 
 .header img {
@@ -13,21 +13,22 @@
 
 .login {
   float: right;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-right: 20px;
 
-  color: aliceblue;
+  color: #f8f7f2;
 }
 
 .logout {
   float: right;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-left: 20px;
-  
-  color: aliceblue;
-  background-color: #d42a1b;
+
+  color: #f8f7f2;
+  background-color: #dd2355;
   border: none;
 }
 .logout:hover {

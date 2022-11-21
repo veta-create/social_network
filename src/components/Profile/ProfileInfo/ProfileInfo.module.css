@@ -1,12 +1,17 @@
 .descriptionBlock {
+  width: 300px;
   padding: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "MarckScript-Regular";
+
+  color: #dd2355;
 }
 
 .ava img {
   border-radius: 20%;
   width: 200px;
   height: 200px;
-  box-shadow: inset 30px 30px black;
 }
 
 .contact img {
@@ -23,4 +28,10 @@
   color: aliceblue;
 }
 
-
+@font-face {
+  font-family: "MarckScript-Regular";
+  src: url("../../../fonts/Marck_Script/MarckScript-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

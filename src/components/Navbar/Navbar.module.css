@@ -2,17 +2,19 @@
   grid-area: n;
   padding: 15px;
 
-  background-color: #dd4f37;
+  background-color: #fd5e5b;
 }
 
-.item a{
+.item a {
   text-decoration: none;
+  font-size: 1.5rem;
   cursor: pointer;
-  
-  color: #f3d59e;
+
+  color: #f8f7f2;
 }
 
 .item .active {
-  color: #fae7c3;
-  font-size: 23px;
+  font-size: 1.8rem;
+
+  color: #fccb6f;
 }

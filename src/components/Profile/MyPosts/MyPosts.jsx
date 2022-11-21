@@ -10,7 +10,7 @@ const MyPosts = (props) => {
   return (
     <div className={s.postsBlock}>
       <div>
-        <h2>My posts</h2>
+        <div className={s.header}>My posts</div>
         <PostForm addPost={props.addPost} />
       </div>
       <div className={s.posts}>

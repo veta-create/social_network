@@ -17,8 +17,8 @@
 .app-wrapper-content {
   grid-area: c;
   
-  background-color: #a3180b;
-  color: antiquewhite;
+  background-color: #f8f7f2;
+  color: #000;
 }
 
 .app-wrapper-content img {

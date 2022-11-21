@@ -1,14 +1,9 @@
 .formControl {
-
 }
 
 .formControl.textField textarea {
-  border: 3px solid rgb(211, 138, 109);
+  border: 3px solid #fd5e5b;
 }
-
-/* .formControl.textField.error textarea {
-  border: 8px solid #fff;
-} */
 
 .formControl.textField textarea:focus {
   outline: none;
@@ -24,4 +19,3 @@ div.error {
   height: 200px;
   width: 50px;
 }
-

@@ -17,7 +17,7 @@ const LoginForm = (props) => {
       <div className={s.formSummaryError}>
         {props.error && <div className={s.errorText}>! {props.error}</div>}
       </div>
-      <div><button>SUBMIT</button></div>
+      <div><button className={s.buttonSubmit}>SUBMIT</button></div>
 
     </form>
   </div>
@@ -36,9 +36,8 @@ const Login = (props) => {
     return <Redirect to={'/profile'} />
   }
 
-  return <div>
-
-    <h1>Login</h1>
+  return <div className={s.login}>
+    <h1 className={s.header}>Login</h1>
     <LoginReduxForm onSubmit={onSubmit} />
 
   </div>

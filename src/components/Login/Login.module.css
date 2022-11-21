@@ -1,3 +1,23 @@
+.login {
+  padding: 30px;
+  color: #dd2355;
+}
+
+.buttonSubmit {
+  margin-top: 20px;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+
+  background-color: #fd5e5b;
+  color: #f8f7f2;
+  border: none;
+}
+
+.buttonSubmit:hover {
+  transform: scale(1.1);
+}
+
 .errorText {
   font-weight: bold;
 }
